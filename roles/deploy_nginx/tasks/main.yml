@@ -1,0 +1,15 @@
+---
+# tasks file for deploy_nginx
+- name: Do installing NGINX
+  apt:
+          name: nginx
+          state: latest
+
+- name: Start and enable NGINX
+  service:
+          name: nginx
+          state: started
+          enabled: yes
+
+- name: Generate index.html
+  template: src=index.j2 dest={{ dest_dir }}/index.html

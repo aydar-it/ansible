@@ -1,0 +1,17 @@
+---
+- name: Delete NGINX
+  hosts: nginx
+  become: yes
+  tasks:
+          - name: Do delete nginx
+            apt:
+                    name: nginx
+                    state: absent
+- name: Delete PostreSQL
+  hosts: postgresql
+  become: yes
+  tasks:
+          - name: Do deleting PostreSQL
+            apt:
+                    name: postgresql
+                    state: absent

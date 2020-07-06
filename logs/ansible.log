@@ -1,0 +1,289 @@
+2020-07-01 23:06:03,227 p=3980 u=aydar n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2020-07-01 23:07:02,091 p=4003 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.0.43 port 22: Connection refused", 
+    "unreachable": true
+}
+2020-07-01 23:08:13,846 p=4093 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.0.43 port 22: Connection refused", 
+    "unreachable": true
+}
+2020-07-01 23:53:35,676 p=4588 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-01 23:54:11,601 p=4605 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-01 23:57:03,704 p=4661 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-01 23:57:53,187 p=6088 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-01 23:59:02,394 p=6123 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-01 23:59:44,631 p=6151 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-02 00:01:24,720 p=6172 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: aydar@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-02 00:08:35,279 p=6633 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: aydar@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-02 00:08:52,118 p=6645 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-02 00:09:45,372 p=6699 u=aydar n=ansible | ansible 2.9.10
+  config file = /home/aydar/ansible/ansible.cfg
+  configured module search path = [u'/home/aydar/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 2.7.17 (default, Apr 15 2020, 17:20:14) [GCC 7.5.0]
+2020-07-02 00:09:45,372 p=6699 u=aydar n=ansible | Using /home/aydar/ansible/ansible.cfg as config file
+2020-07-02 00:09:45,375 p=6699 u=aydar n=ansible | host_list declined parsing /home/aydar/ansible/inventory as it did not pass its verify_file() method
+2020-07-02 00:09:45,375 p=6699 u=aydar n=ansible | script declined parsing /home/aydar/ansible/inventory as it did not pass its verify_file() method
+2020-07-02 00:09:45,375 p=6699 u=aydar n=ansible | auto declined parsing /home/aydar/ansible/inventory as it did not pass its verify_file() method
+2020-07-02 00:09:45,377 p=6699 u=aydar n=ansible | Parsed /home/aydar/ansible/inventory inventory source with ini plugin
+2020-07-02 00:09:45,442 p=6699 u=aydar n=ansible | META: ran handlers
+2020-07-02 00:09:45,481 p=6705 u=aydar n=ansible | <192.168.0.43> ESTABLISH SSH CONNECTION FOR USER: cli
+2020-07-02 00:09:45,481 p=6705 u=aydar n=ansible | <192.168.0.43> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="cli"' -o ConnectTimeout=10 -o ControlPath=/home/aydar/.ansible/cp/cd9eae5b55 192.168.0.43 '/bin/sh -c '"'"'echo ~cli && sleep 0'"'"''
+2020-07-02 00:09:45,508 p=6705 u=aydar n=ansible | <192.168.0.43> (255, '', 'cli@192.168.0.43: Permission denied (publickey,password).\r\n')
+2020-07-02 00:09:45,512 p=6699 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-02 00:12:15,409 p=6767 u=aydar n=ansible | ansible 2.9.10
+  config file = /home/aydar/ansible/ansible.cfg
+  configured module search path = [u'/home/aydar/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 2.7.17 (default, Apr 15 2020, 17:20:14) [GCC 7.5.0]
+2020-07-02 00:12:15,409 p=6767 u=aydar n=ansible | Using /home/aydar/ansible/ansible.cfg as config file
+2020-07-02 00:12:15,412 p=6767 u=aydar n=ansible | host_list declined parsing /home/aydar/ansible/inventory as it did not pass its verify_file() method
+2020-07-02 00:12:15,412 p=6767 u=aydar n=ansible | script declined parsing /home/aydar/ansible/inventory as it did not pass its verify_file() method
+2020-07-02 00:12:15,412 p=6767 u=aydar n=ansible | auto declined parsing /home/aydar/ansible/inventory as it did not pass its verify_file() method
+2020-07-02 00:12:15,414 p=6767 u=aydar n=ansible | Parsed /home/aydar/ansible/inventory inventory source with ini plugin
+2020-07-02 00:12:15,505 p=6767 u=aydar n=ansible | META: ran handlers
+2020-07-02 00:12:15,560 p=6773 u=aydar n=ansible | <192.168.0.43> ESTABLISH SSH CONNECTION FOR USER: cli
+2020-07-02 00:12:15,573 p=6773 u=aydar n=ansible | <192.168.0.43> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'User="cli"' -o ConnectTimeout=10 -o ControlPath=/home/aydar/.ansible/cp/cd9eae5b55 192.168.0.43 '/bin/sh -c '"'"'echo ~cli && sleep 0'"'"''
+2020-07-02 00:12:15,801 p=6773 u=aydar n=ansible | <192.168.0.43> (0, '/home/cli\n', '')
+2020-07-02 00:12:15,801 p=6773 u=aydar n=ansible | <192.168.0.43> ESTABLISH SSH CONNECTION FOR USER: cli
+2020-07-02 00:12:15,802 p=6773 u=aydar n=ansible | <192.168.0.43> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'User="cli"' -o ConnectTimeout=10 -o ControlPath=/home/aydar/.ansible/cp/cd9eae5b55 192.168.0.43 '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /home/cli/.ansible/tmp `"&& mkdir /home/cli/.ansible/tmp/ansible-tmp-1593637935.8-6773-273471330498287 && echo ansible-tmp-1593637935.8-6773-273471330498287="` echo /home/cli/.ansible/tmp/ansible-tmp-1593637935.8-6773-273471330498287 `" ) && sleep 0'"'"''
+2020-07-02 00:12:15,817 p=6773 u=aydar n=ansible | <192.168.0.43> (0, 'ansible-tmp-1593637935.8-6773-273471330498287=/home/cli/.ansible/tmp/ansible-tmp-1593637935.8-6773-273471330498287\n', '')
+2020-07-02 00:12:15,963 p=6773 u=aydar n=ansible | <linux1> Attempting python interpreter discovery
+2020-07-02 00:12:15,963 p=6773 u=aydar n=ansible | <192.168.0.43> ESTABLISH SSH CONNECTION FOR USER: cli
+2020-07-02 00:12:15,964 p=6773 u=aydar n=ansible | <192.168.0.43> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'User="cli"' -o ConnectTimeout=10 -o ControlPath=/home/aydar/.ansible/cp/cd9eae5b55 192.168.0.43 '/bin/sh -c '"'"'echo PLATFORM; uname; echo FOUND; command -v '"'"'"'"'"'"'"'"'/usr/bin/python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.5'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/libexec/platform-python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/bin/python3'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python'"'"'"'"'"'"'"'"'; echo ENDFOUND && sleep 0'"'"''
+2020-07-02 00:12:15,973 p=6773 u=aydar n=ansible | <192.168.0.43> (0, 'PLATFORM\nLinux\nFOUND\n/usr/bin/python\n/usr/bin/python3.6\n/usr/bin/python2.7\n/usr/bin/python3\n/usr/bin/python\nENDFOUND\n', '')
+2020-07-02 00:12:15,978 p=6773 u=aydar n=ansible | <192.168.0.43> ESTABLISH SSH CONNECTION FOR USER: cli
+2020-07-02 00:12:15,980 p=6773 u=aydar n=ansible | <192.168.0.43> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'User="cli"' -o ConnectTimeout=10 -o ControlPath=/home/aydar/.ansible/cp/cd9eae5b55 192.168.0.43 '/bin/sh -c '"'"'/usr/bin/python && sleep 0'"'"''
+2020-07-02 00:12:16,015 p=6773 u=aydar n=ansible | <192.168.0.43> (0, '{"osrelease_content": "NAME=\\"Ubuntu\\"\\nVERSION=\\"18.04.4 LTS (Bionic Beaver)\\"\\nID=ubuntu\\nID_LIKE=debian\\nPRETTY_NAME=\\"Ubuntu 18.04.4 LTS\\"\\nVERSION_ID=\\"18.04\\"\\nHOME_URL=\\"https://www.ubuntu.com/\\"\\nSUPPORT_URL=\\"https://help.ubuntu.com/\\"\\nBUG_REPORT_URL=\\"https://bugs.launchpad.net/ubuntu/\\"\\nPRIVACY_POLICY_URL=\\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\\"\\nVERSION_CODENAME=bionic\\nUBUNTU_CODENAME=bionic\\n", "platform_dist_result": ["Ubuntu", "18.04", "bionic"]}\n', '')
+2020-07-02 00:12:16,016 p=6773 u=aydar n=ansible | Using module file /usr/lib/python2.7/dist-packages/ansible/modules/system/ping.py
+2020-07-02 00:12:16,017 p=6773 u=aydar n=ansible | <192.168.0.43> PUT /home/aydar/.ansible/tmp/ansible-local-6767Ha2bz7/tmpfPkScH TO /home/cli/.ansible/tmp/ansible-tmp-1593637935.8-6773-273471330498287/AnsiballZ_ping.py
+2020-07-02 00:12:16,017 p=6773 u=aydar n=ansible | <192.168.0.43> SSH: EXEC sshpass -d11 sftp -o BatchMode=no -b - -C -o ControlMaster=auto -o ControlPersist=60s -o 'User="cli"' -o ConnectTimeout=10 -o ControlPath=/home/aydar/.ansible/cp/cd9eae5b55 '[192.168.0.43]'
+2020-07-02 00:12:16,045 p=6773 u=aydar n=ansible | <192.168.0.43> (0, 'sftp> put /home/aydar/.ansible/tmp/ansible-local-6767Ha2bz7/tmpfPkScH /home/cli/.ansible/tmp/ansible-tmp-1593637935.8-6773-273471330498287/AnsiballZ_ping.py\n', '')
+2020-07-02 00:12:16,045 p=6773 u=aydar n=ansible | <192.168.0.43> ESTABLISH SSH CONNECTION FOR USER: cli
+2020-07-02 00:12:16,046 p=6773 u=aydar n=ansible | <192.168.0.43> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'User="cli"' -o ConnectTimeout=10 -o ControlPath=/home/aydar/.ansible/cp/cd9eae5b55 192.168.0.43 '/bin/sh -c '"'"'chmod u+x /home/cli/.ansible/tmp/ansible-tmp-1593637935.8-6773-273471330498287/ /home/cli/.ansible/tmp/ansible-tmp-1593637935.8-6773-273471330498287/AnsiballZ_ping.py && sleep 0'"'"''
+2020-07-02 00:12:16,054 p=6773 u=aydar n=ansible | <192.168.0.43> (0, '', '')
+2020-07-02 00:12:16,054 p=6773 u=aydar n=ansible | <192.168.0.43> ESTABLISH SSH CONNECTION FOR USER: cli
+2020-07-02 00:12:16,055 p=6773 u=aydar n=ansible | <192.168.0.43> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'User="cli"' -o ConnectTimeout=10 -o ControlPath=/home/aydar/.ansible/cp/cd9eae5b55 -tt 192.168.0.43 '/bin/sh -c '"'"'/usr/bin/python /home/cli/.ansible/tmp/ansible-tmp-1593637935.8-6773-273471330498287/AnsiballZ_ping.py && sleep 0'"'"''
+2020-07-02 00:12:16,149 p=6773 u=aydar n=ansible | <192.168.0.43> (0, '\r\n{"invocation": {"module_args": {"data": "pong"}}, "ping": "pong"}\r\n', 'Shared connection to 192.168.0.43 closed.\r\n')
+2020-07-02 00:12:16,150 p=6773 u=aydar n=ansible | <192.168.0.43> ESTABLISH SSH CONNECTION FOR USER: cli
+2020-07-02 00:12:16,151 p=6773 u=aydar n=ansible | <192.168.0.43> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'User="cli"' -o ConnectTimeout=10 -o ControlPath=/home/aydar/.ansible/cp/cd9eae5b55 192.168.0.43 '/bin/sh -c '"'"'rm -f -r /home/cli/.ansible/tmp/ansible-tmp-1593637935.8-6773-273471330498287/ > /dev/null 2>&1 && sleep 0'"'"''
+2020-07-02 00:12:16,159 p=6773 u=aydar n=ansible | <192.168.0.43> (0, '', '')
+2020-07-02 00:12:16,165 p=6767 u=aydar n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host linux1 should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform 
+python for this host. See 
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for 
+more information. This feature will be removed in version 2.12. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-02 00:12:16,166 p=6767 u=aydar n=ansible | linux1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "data": "pong"
+        }
+    }, 
+    "ping": "pong"
+}
+2020-07-02 00:12:16,166 p=6767 u=aydar n=ansible | META: ran handlers
+2020-07-02 00:12:16,166 p=6767 u=aydar n=ansible | META: ran handlers
+2020-07-02 00:13:19,110 p=6806 u=aydar n=ansible | ansible 2.9.10
+  config file = /home/aydar/ansible/ansible.cfg
+  configured module search path = [u'/home/aydar/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 2.7.17 (default, Apr 15 2020, 17:20:14) [GCC 7.5.0]
+2020-07-02 00:13:19,110 p=6806 u=aydar n=ansible | Using /home/aydar/ansible/ansible.cfg as config file
+2020-07-02 00:13:19,114 p=6806 u=aydar n=ansible | host_list declined parsing /home/aydar/ansible/inventory as it did not pass its verify_file() method
+2020-07-02 00:13:19,114 p=6806 u=aydar n=ansible | script declined parsing /home/aydar/ansible/inventory as it did not pass its verify_file() method
+2020-07-02 00:13:19,114 p=6806 u=aydar n=ansible | auto declined parsing /home/aydar/ansible/inventory as it did not pass its verify_file() method
+2020-07-02 00:13:19,116 p=6806 u=aydar n=ansible | Parsed /home/aydar/ansible/inventory inventory source with ini plugin
+2020-07-02 00:13:19,203 p=6806 u=aydar n=ansible | META: ran handlers
+2020-07-02 00:13:19,236 p=6812 u=aydar n=ansible | <192.168.0.43> ESTABLISH SSH CONNECTION FOR USER: cli
+2020-07-02 00:13:19,242 p=6812 u=aydar n=ansible | <192.168.0.43> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'User="cli"' -o ConnectTimeout=10 -o ControlPath=/home/aydar/.ansible/cp/cd9eae5b55 192.168.0.43 '/bin/sh -c '"'"'echo ~cli && sleep 0'"'"''
+2020-07-02 00:13:19,462 p=6812 u=aydar n=ansible | <192.168.0.43> (0, '/home/cli\n', '')
+2020-07-02 00:13:19,463 p=6812 u=aydar n=ansible | <192.168.0.43> ESTABLISH SSH CONNECTION FOR USER: cli
+2020-07-02 00:13:19,463 p=6812 u=aydar n=ansible | <192.168.0.43> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'User="cli"' -o ConnectTimeout=10 -o ControlPath=/home/aydar/.ansible/cp/cd9eae5b55 192.168.0.43 '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /home/cli/.ansible/tmp `"&& mkdir /home/cli/.ansible/tmp/ansible-tmp-1593637999.46-6812-53362776401713 && echo ansible-tmp-1593637999.46-6812-53362776401713="` echo /home/cli/.ansible/tmp/ansible-tmp-1593637999.46-6812-53362776401713 `" ) && sleep 0'"'"''
+2020-07-02 00:13:19,472 p=6812 u=aydar n=ansible | <192.168.0.43> (0, 'ansible-tmp-1593637999.46-6812-53362776401713=/home/cli/.ansible/tmp/ansible-tmp-1593637999.46-6812-53362776401713\n', '')
+2020-07-02 00:13:19,600 p=6812 u=aydar n=ansible | <linux1> Attempting python interpreter discovery
+2020-07-02 00:13:19,601 p=6812 u=aydar n=ansible | <192.168.0.43> ESTABLISH SSH CONNECTION FOR USER: cli
+2020-07-02 00:13:19,601 p=6812 u=aydar n=ansible | <192.168.0.43> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'User="cli"' -o ConnectTimeout=10 -o ControlPath=/home/aydar/.ansible/cp/cd9eae5b55 192.168.0.43 '/bin/sh -c '"'"'echo PLATFORM; uname; echo FOUND; command -v '"'"'"'"'"'"'"'"'/usr/bin/python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.5'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/libexec/platform-python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/bin/python3'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python'"'"'"'"'"'"'"'"'; echo ENDFOUND && sleep 0'"'"''
+2020-07-02 00:13:19,614 p=6812 u=aydar n=ansible | <192.168.0.43> (0, 'PLATFORM\nLinux\nFOUND\n/usr/bin/python\n/usr/bin/python3.6\n/usr/bin/python2.7\n/usr/bin/python3\n/usr/bin/python\nENDFOUND\n', '')
+2020-07-02 00:13:19,615 p=6812 u=aydar n=ansible | <192.168.0.43> ESTABLISH SSH CONNECTION FOR USER: cli
+2020-07-02 00:13:19,616 p=6812 u=aydar n=ansible | <192.168.0.43> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'User="cli"' -o ConnectTimeout=10 -o ControlPath=/home/aydar/.ansible/cp/cd9eae5b55 192.168.0.43 '/bin/sh -c '"'"'/usr/bin/python && sleep 0'"'"''
+2020-07-02 00:13:19,636 p=6812 u=aydar n=ansible | <192.168.0.43> (0, '{"osrelease_content": "NAME=\\"Ubuntu\\"\\nVERSION=\\"18.04.4 LTS (Bionic Beaver)\\"\\nID=ubuntu\\nID_LIKE=debian\\nPRETTY_NAME=\\"Ubuntu 18.04.4 LTS\\"\\nVERSION_ID=\\"18.04\\"\\nHOME_URL=\\"https://www.ubuntu.com/\\"\\nSUPPORT_URL=\\"https://help.ubuntu.com/\\"\\nBUG_REPORT_URL=\\"https://bugs.launchpad.net/ubuntu/\\"\\nPRIVACY_POLICY_URL=\\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\\"\\nVERSION_CODENAME=bionic\\nUBUNTU_CODENAME=bionic\\n", "platform_dist_result": ["Ubuntu", "18.04", "bionic"]}\n', '')
+2020-07-02 00:13:19,637 p=6812 u=aydar n=ansible | Using module file /usr/lib/python2.7/dist-packages/ansible/modules/system/ping.py
+2020-07-02 00:13:19,638 p=6812 u=aydar n=ansible | <192.168.0.43> PUT /home/aydar/.ansible/tmp/ansible-local-68063spJ5z/tmpS5pQ84 TO /home/cli/.ansible/tmp/ansible-tmp-1593637999.46-6812-53362776401713/AnsiballZ_ping.py
+2020-07-02 00:13:19,638 p=6812 u=aydar n=ansible | <192.168.0.43> SSH: EXEC sshpass -d11 sftp -o BatchMode=no -b - -C -o ControlMaster=auto -o ControlPersist=60s -o 'User="cli"' -o ConnectTimeout=10 -o ControlPath=/home/aydar/.ansible/cp/cd9eae5b55 '[192.168.0.43]'
+2020-07-02 00:13:19,662 p=6812 u=aydar n=ansible | <192.168.0.43> (0, 'sftp> put /home/aydar/.ansible/tmp/ansible-local-68063spJ5z/tmpS5pQ84 /home/cli/.ansible/tmp/ansible-tmp-1593637999.46-6812-53362776401713/AnsiballZ_ping.py\n', '')
+2020-07-02 00:13:19,662 p=6812 u=aydar n=ansible | <192.168.0.43> ESTABLISH SSH CONNECTION FOR USER: cli
+2020-07-02 00:13:19,662 p=6812 u=aydar n=ansible | <192.168.0.43> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'User="cli"' -o ConnectTimeout=10 -o ControlPath=/home/aydar/.ansible/cp/cd9eae5b55 192.168.0.43 '/bin/sh -c '"'"'chmod u+x /home/cli/.ansible/tmp/ansible-tmp-1593637999.46-6812-53362776401713/ /home/cli/.ansible/tmp/ansible-tmp-1593637999.46-6812-53362776401713/AnsiballZ_ping.py && sleep 0'"'"''
+2020-07-02 00:13:19,671 p=6812 u=aydar n=ansible | <192.168.0.43> (0, '', '')
+2020-07-02 00:13:19,672 p=6812 u=aydar n=ansible | <192.168.0.43> ESTABLISH SSH CONNECTION FOR USER: cli
+2020-07-02 00:13:19,672 p=6812 u=aydar n=ansible | <192.168.0.43> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'User="cli"' -o ConnectTimeout=10 -o ControlPath=/home/aydar/.ansible/cp/cd9eae5b55 -tt 192.168.0.43 '/bin/sh -c '"'"'/usr/bin/python /home/cli/.ansible/tmp/ansible-tmp-1593637999.46-6812-53362776401713/AnsiballZ_ping.py && sleep 0'"'"''
+2020-07-02 00:13:19,739 p=6812 u=aydar n=ansible | <192.168.0.43> (0, '\r\n{"invocation": {"module_args": {"data": "pong"}}, "ping": "pong"}\r\n', 'Shared connection to 192.168.0.43 closed.\r\n')
+2020-07-02 00:13:19,740 p=6812 u=aydar n=ansible | <192.168.0.43> ESTABLISH SSH CONNECTION FOR USER: cli
+2020-07-02 00:13:19,741 p=6812 u=aydar n=ansible | <192.168.0.43> SSH: EXEC sshpass -d11 ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'User="cli"' -o ConnectTimeout=10 -o ControlPath=/home/aydar/.ansible/cp/cd9eae5b55 192.168.0.43 '/bin/sh -c '"'"'rm -f -r /home/cli/.ansible/tmp/ansible-tmp-1593637999.46-6812-53362776401713/ > /dev/null 2>&1 && sleep 0'"'"''
+2020-07-02 00:13:19,750 p=6812 u=aydar n=ansible | <192.168.0.43> (0, '', '')
+2020-07-02 00:13:19,760 p=6806 u=aydar n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host linux1 should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform 
+python for this host. See 
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for 
+more information. This feature will be removed in version 2.12. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-02 00:13:19,762 p=6806 u=aydar n=ansible | linux1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "data": "pong"
+        }
+    }, 
+    "ping": "pong"
+}
+2020-07-02 00:13:19,762 p=6806 u=aydar n=ansible | META: ran handlers
+2020-07-02 00:13:19,762 p=6806 u=aydar n=ansible | META: ran handlers
+2020-07-02 00:13:22,773 p=6837 u=aydar n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host linux1 should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform 
+python for this host. See 
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for 
+more information. This feature will be removed in version 2.12. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-02 00:13:22,773 p=6837 u=aydar n=ansible | linux1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2020-07-02 00:18:58,823 p=6932 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: no such identity: /home/cli/.ssh/id_rsa: No such file or directory\r\ncli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-02 00:20:41,075 p=6966 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-02 00:21:07,837 p=6979 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-02 00:26:51,455 p=7024 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-02 00:42:54,537 p=7199 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-02 00:43:10,177 p=7212 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-02 00:43:36,383 p=7229 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-02 00:44:08,763 p=7242 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-02 00:44:19,105 p=7254 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: no such identity: /home/aydar/.ssh/id_rsa.puhb: No such file or directory\r\ncli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-02 00:44:37,029 p=7266 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-02 00:45:05,537 p=7280 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-02 00:53:27,575 p=7333 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-02 00:53:56,287 p=7347 u=aydar n=ansible | linux1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: cli@192.168.0.43: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2020-07-02 01:15:07,260 p=7809 u=aydar n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host linux1 should use 
+/usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform 
+python for this host. See 
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for 
+more information. This feature will be removed in version 2.12. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2020-07-02 01:15:07,261 p=7809 u=aydar n=ansible | linux1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}

@@ -1,0 +1,6 @@
+---
+- name: NGINX inst.
+  hosts: nginx
+  become: yes
+  roles:
+          - deploy_nginx

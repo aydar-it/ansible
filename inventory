@@ -1,0 +1,9 @@
+[nginx]
+nginx_server ansible_host=192.168.0.37
+
+[postgresql]
+postgresql_server ansible_host=192.168.0.177
+
+[test:children]
+nginx
+postgresql

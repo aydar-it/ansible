@@ -1,0 +1,10 @@
+---
+- name: PostgreSQL installation
+  hosts: postgresql
+  become: yes
+  tasks:
+          - name: Do installing PostgreSQL
+            apt:
+                    name: postgresql
+                    state: latest
+
